@@ -1,4 +1,6 @@
+import CustomFilter from "@/components/CustomFilter";
 import Hero from "@/components/Hero";
+import SearchBar from "@/components/SearchBar";
 import React from "react";
 
 const Home = () => {
@@ -17,7 +19,8 @@ const Home = () => {
           <SearchBar />
 
           <div className="home__filter-container ">
-            <CustomFilter />
+            <CustomFilter title="fuel" />
+            <CustomFilter title="year" />
           </div>
         </div>
       </div>
