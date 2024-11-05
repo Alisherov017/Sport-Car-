@@ -16,7 +16,9 @@ const Home = () => {
         <div className="home__filters">
           <SearchBar />
 
-          <div className="home__filter-container "></div>
+          <div className="home__filter-container ">
+            <CustomFilter />
+          </div>
         </div>
       </div>
     </main>
