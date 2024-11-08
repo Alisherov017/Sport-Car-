@@ -1,9 +1,15 @@
+// ("use client");
+
 import CustomFilter from "@/components/CustomFilter";
 import Hero from "@/components/Hero";
 import SearchBar from "@/components/SearchBar";
+import { fetchCars } from "@/utils";
 import React from "react";
 
-const Home = () => {
+const Home = async () => {
+  const allCars = await fetchCars();
+  console.log(allCars);
+
   return (
     <main className="overflow-hidden ">
       <Hero />
